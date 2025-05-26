@@ -1,20 +1,184 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа №1 - Современное образование</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Школа №1</title>
-      <meta name="pp-name" value="school-site-development-1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="pp-name" value="school-site-development-1">
       <script src="https://cdn.poehali.dev/intertnal/js/pp-min-2.js"></script>
       <script src="https://cdn.poehali.dev/intertnal/js/route-min.js"></script>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span>Ш</span>
+                </div>
+                <h1 class="brand-text">Школа №1</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">Главная</a></li>
+                <li><a href="about.html" class="nav-link">О школе</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                <li><a href="registration.html" class="nav-link">Регистрация</a></li>
+                <li><a href="auth.html" class="nav-link btn-auth">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Будущее начинается здесь</h2>
+            <p class="hero-subtitle">Современные методы обучения, опытные педагоги и индивидуальный подход к каждому ученику</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Подать заявление</button>
+                <button class="btn btn-secondary">Узнать больше</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop" alt="Современная школа">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h3 class="section-title">Почему выбирают нас</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h4>Качественное образование</h4>
+                    <p>Современные программы обучения по государственным стандартам</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h4>Опытные педагоги</h4>
+                    <p>Команда профессионалов с многолетним опытом работы</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h4>Современные технологии</h4>
+                    <p>Интерактивные доски, компьютерные классы, онлайн-платформы</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h4>Высокие результаты</h4>
+                    <p>98% выпускников поступают в ведущие вузы страны</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">850+</div>
+                    <div class="stat-label">Учеников</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">45</div>
+                    <div class="stat-label">Учителей</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Поступают в вузы</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <h3 class="section-title">Новости школы</h3>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop" alt="Новость">
+                    <div class="news-content">
+                        <span class="news-date">15 Мая 2025</span>
+                        <h4>Победа в региональной олимпиаде</h4>
+                        <p>Наши ученики заняли призовые места в олимпиаде по математике</p>
+                        <a href="#" class="news-link">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=200&fit=crop" alt="Новость">
+                    <div class="news-content">
+                        <span class="news-date">12 Мая 2025</span>
+                        <h4>Открытие нового компьютерного класса</h4>
+                        <p>Современное оборудование для изучения IT-технологий</p>
+                        <a href="#" class="news-link">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=300&h=200&fit=crop" alt="Новость">
+                    <div class="news-content">
+                        <span class="news-date">10 Мая 2025</span>
+                        <h4>День открытых дверей</h4>
+                        <p>Приглашаем будущих первоклассников и их родителей</p>
+                        <a href="#" class="news-link">Читать далее →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span>Ш</span>
+                    </div>
+                    <h4>Школа №1</h4>
+                    <p>Современное образование для успешного будущего</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>Навигация</h5>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="about.html">О школе</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Для родителей</h5>
+                        <ul>
+                            <li><a href="registration.html">Регистрация</a></li>
+                            <li><a href="auth.html">Вход в систему</a></li>
+                            <li><a href="#">Электронный дневник</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h5>Контакты</h5>
+                        <ul>
+                            <li>📧 info@school1.ru</li>
+                            <li>📞 +7 (495) 123-45-67</li>
+                            <li>📍 Москва, ул. Школьная, 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Школа №1. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
